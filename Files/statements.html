@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>W4Schools Online Web Tutorials</title>
+	<link rel="icon" type="image/ico" href="238.jpg">
+	<style type="text/css">
+	ul{
+			font-family:Times New Roman;
+			font-size:20px;
+		}
+		h1{
+			font-family: Times New Roman;
+			color:green;
+		}
+		p{
+			font-family: Times New Roman;
+			font-size: 20px;
+		}
+		h2{
+			color:#003399;
+		}
+		div{
+			background-color: green;
+			color: white;
+			border-radius: 5px;
+			border-style: dashed;
+			border-color:brown;
+		}
+	</style>
+</head>
+<body>
+	<h1>Statements</h1>
+	<p>By that analogy, statements are JavaScript sentences or commands.One way to “make something happen” is to evaluate an expression that has side effects.Expressions with side effects, such as assignments and function invocations, can stand alone as statements, and when used this way they are known as expression statements.A similar category of statements are the declaration statements that declare new variables and define new functions.</p>
+	<h2>Expression Statements</h2>
+	<ul>
+		<li>Assignment statements are one major category of expression statements. For example:<br><img src="primarystatement.png"></li>
+		<li>The increment and decrement operators, ++ and --, are related to assignment statements.</li>
+		<li>The delete operator has the important side effect of deleting an object property</li>
+		<li>Function calls are another major category of expression statements. For example:<br><img src="exst.png"></li>
+	</ul>
+	<h2>Compound and Empty Statements</h2>
+	<ul>
+		<li>A statement block is simply a sequence of statements enclosed within curly braces. Thus, the following lines act as a single statement and can be used anywhere that JavaScript expects a single statement:<br><img src="exst1.png"></li>
+		<li>There are a few things to note about this statement block. First, it does not end with a semicolon</li>
+		<li>The primitive statements within the block end in semicolons, but the block itself does not.</li>
+		<li>Second, the lines inside the block are indented relative to the curly braces that enclose them.This is optional, but it makes the code easier to read and understand.</li>
+		<li>Combining statements into larger statement blocks is extremely common in JavaScript programming.</li>
+		<li>Just as expressions often contain subexpressions, many JavaScript statements contain substatements.</li>
+		<li>For example, the while loop syntax includes a single statement that serves as the body of the loop. Using a statement block, you can place any number of statements within this single allowed substatement.</li>
+		<li>The JavaScript interpreter takes no action when it executes an empty statement. The empty statement is occasionally useful when you want to create a loop that has an empty body. Consider the following for loop<br><img src="exst3.png"></li>
+		<li>Note that the accidental inclusion of a semicolon after the right parenthesis of a for loop, while loop, or if statement can cause frustrating bugs that are difficult to detect.For example, the following code probably does not do what the author intended:
+			<br><img src="exst2.png"></li>
+	</ul>
+	<h2>Declaration Statements</h2>
+		<ul>
+			<li>The var and function are declaration statements—they declare or define variables and functions. These statements define identifiers (variable and function names) that can be used elsewhere in your program and assign values to those identifiers.</li>
+			<li>The var statement declares a variable or variables. Here’s the syntax:<br>
+				<b>var name_1 [ = value_1] [ ,..., name_n [= value_n]]</b></li>
+			<li>The var keyword is followed by a comma-separated list of variables to declare; each variable in the list may optionally have an initializer expression that specifies its initial value. For example:<br><img src="exst4.png"></li>
+		</ul>
+</body>
+</html>

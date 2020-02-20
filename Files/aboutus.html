@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+p.italic{
+	font-style:italic;
+	font-size:x-large;
+}
+h1.italic{
+	font-style:italic;
+}
+.bg-image {
+  /* The image used */
+  background-image: url("jslogo.png");
+
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(5px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 5 px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="bg-image"></div>
+<div class="bg-text">
+<dl>
+  <dt><h1 class='italic'align='left'>About us</h1></dt>
+  <dd><p class="italic" align='center'>This is a Javascript language website created by  the students of EEE department of Karpagam college of engineering .This is to enlighten the students about the Javascript language in a easy manner.The purpose  to create this website is to establish the importance of Javascript language in creating webpage.At current scenerio the demand of JS language in creating webpage  in web based industries is becoming high .So this is solely to learn the step by step procedure in creating a webpage using javascript language.<br></p></dd>
+</dl>
+  
+
+</div>
+</body>
+</html>

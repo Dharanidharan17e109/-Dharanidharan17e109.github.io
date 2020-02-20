@@ -1,0 +1,117 @@
+<html>
+<head>
+	<title>W4Schools Online Web Tutorials</title>
+	<link rel="icon" type="image/ico" href="238.jpg">
+	<style type="text/css">
+		ul{
+			font-family:Times New Roman;
+			font-size:20px;
+		}
+		h1{
+			font-family: Times New Roman;
+			color:green;
+		}
+		p{
+			font-family: Times New Roman;
+			font-size: 20px;
+		}
+		h2{
+			color:#003399;
+		}
+		div{
+			background-color: green;
+			color: white;
+			border-radius: 5px;
+			border-style: dashed;
+			border-color:brown;
+		}
+		table{
+			background-color: grey;
+		}
+	</style>
+</head>
+<body>
+	<h1>Lexical Structure</h1>
+	<ul>
+		<li>The lexical structure of a programming language is the set of elementary rules that specifies how you write programs in that language. It is the lowest-level syntax of a language; it specifies such things as what variable names look like, the delimiter characters for comments, and how one program statement is separated from the next. This short chapter documents the lexical structure of JavaScript</li>		
+	</ul>
+	<h2>Character Set</h2>
+	<ul>
+		<li>JavaScript programs are written using the Unicode character set.</li><br>
+		<li> Unicode is a superset of ASCII and Latin-1 and supports virtually every written language currently used on the planet.</li><br>
+		<li> ECMAScript 3 requires JavaScript implementations to support Unicode version 2.1 or later, and ECMAScript 5 requires implementations to support Unicode 3 or later. See the sidebar in §3.2 for more about Unicode and JavaScript. </li>
+	</ul>
+	<h2>Case Sensitivity</h2>
+	<ul>
+		<li>JavaScript is a case-sensitive language.</li><br>
+		<li> This means that language keywords, variables, function names, and other identifiers must always be typed with a consistent capitalization of letters.</li><br>
+		<li>The while keyword, for example, must be typed “while,” not “While” or “WHILE.” Similarly, online, Online, OnLine, and ONLINE are four distinct variable names.</li>
+	</ul>
+	<div >
+			<p style="font-family: Times New Roman;font-size: 20px">Note, however, that HTML is not case-sensitive (although XHTML is). Because of its close association with client-side JavaScript, this difference can be confusing. Many client-side JavaScript objects and properties have the same names as the HTML tags and attributes they represent. While these tags and attribute names can be typed in any case in HTML, in JavaScript they typically must be all lowercase. For example, the HTML onclick event handler attribute is sometimes specified as onClick in HTML, but it must be specified as onclick in JavaScript code (or in XHTML documents).	
+		</div>
+		<h2>Noramalization</h2>
+		<ul>
+			<li>Unicode allows more than one way of encoding the same character.</li><br>
+			<li>The string “é”, for example, can be encoded as the single Unicode character \u00E9 or as a regular ASCII e followed by the acute accent combining mark \u0301. These two encodings may look exactly the same when displayed by a text editor, but they have different binary encodings and are considered different by the computer.</li><br>
+			<li>The Unicode standard defines the preferred encoding for all characters and specifies a normalization procedure to
+convert text to a canonical form suitable for comparisons.</li><br>
+			<li>JavaScript assumes that the source code it is interpreting has already been normalized and makes no attempt to normalize identifiers, strings, or regular expressions itself.</li>
+		</ul>
+		<h2>Comments</h2>
+		<ul>
+			<li>JavaScript supports two styles of comments.</li><br>
+			<li> Any text between a // and the end of a line is treated as a comment and is ignored by JavaScript.</li><br>
+			<li>Any text between the characters /* and */ is also treated as a comment; these comments may span multiple lines but may not be nested.</li><br>
+			<li>The following lines of code are all legal JavaScript comments:<br><img src="comments.png"></li>
+		</ul>
+		<h2>Reserved Words</h2>
+		<ul>
+			<li>JavaScript reserves a number of identifiers as the keywords of the language itself. You cannot use these words as identifiers in your programs:<br>
+				<table border="1px">
+					<tr>
+						<td>break</td>
+						<td>delete</td>
+						<td>function</td>	
+						<td>return</td>
+					</tr>
+					<tr>
+						<td>typeof</td>	
+						<td>case</td>	
+						<td>do</td>	
+						<td>if</td>	
+					</tr> 
+					<tr>
+						<td>switch</td>	
+						<td>var</td>
+						<td>catch</td>
+						<td>else</td>						
+					</tr> 
+					<tr>
+						<td>in</td>
+						<td>this</td>
+						<td>void</td>
+						<td>continue</td>
+					</tr> 
+					<tr>
+						<td>false</td>
+						<td>instanceof </td>
+						<td>throw</td>
+						<td>while debugger</td>
+					</tr>
+					<tr>
+						<td>finally</td>
+						<td>new</td>
+						<td>true</td>
+						<td>with default</td>
+					</tr>
+					<tr>
+						<td>for</td>
+						<td>null</td>
+						<td colspan="2" align="center">try</td>
+					</tr>
+				</table></li>
+		</ul>
+
+</body>
+</html>

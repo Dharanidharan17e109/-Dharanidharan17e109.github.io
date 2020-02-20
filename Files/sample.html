@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>W4Schools Online Web Tutorials</title>
+	<link rel="icon" type="image/ico" href="238.jpg">
+</head>
+<body>
+<script type="text/javascript">
+class myclass{
+  constructor(name) {
+  // invokes the setter
+  this.name=name;
+  }
+  get name(){
+    return this._name;
+  }
+  set name(value) {
+    if (value.length < 4){
+      alert("Name is too short.");
+      return;
+    }
+    this._name = value;
+  }
+}
+let m= new myclass("welcome to w4school");
+alert(m.name); // John
+let m=new myclass("");//welcome to w4school
+</script>
+</body>
+</html>

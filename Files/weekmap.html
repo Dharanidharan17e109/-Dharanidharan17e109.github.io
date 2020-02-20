@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>W4Schools Online Web Tutorials</title>
+	<link rel="icon" type="image/ico" href="238.jpg">
+	<style type="text/css">
+		ul{
+			font-family:Times New Roman;
+			font-size:20px;
+		}
+		h1{
+			font-family: Times New Roman;
+			color:green;
+		}
+		p{
+			font-family: Times New Roman;
+			font-size: 20px;
+		}
+		h2{
+			color:#003399;
+		}
+		div{
+			background-color: green;
+			color: white;
+			border-radius: 5px;
+			border-style: dashed;
+			border-color:brown;
+		}
+	</style>
+</head>
+<body>
+	<h1>Map</h1>
+	<ul>
+		<li>Map is a collection of key and value pair and also we can tell that Map is a collection of keyed data items, just like an Object.<br>map is similar to the dictionary in python.
+</li><br>
+		<li> new Map() – creates the map<br> 
+		     map.set(key,value) – stores the value by the key.<br>
+		     map.get(key) – returns the value by the key, undefined if key doesn’t exist in map.<br>
+		     map.has(key) – returns true if the key exists, false otherwise.<br>
+		     map.delete(key) – removes the value by the key.<br>
+		     map.clear() – removes everything from the map.<br>
+		     map.size – returns the current element count</li>
+		     For example:<br>
+		<img src="m1.png" style="width: 450px;height: 250px">
+	</ul>
+	     
+	<h2>Objects in map</h2>
+	<ul>
+		<li>we can pass an object in the map</li>
+		<li>For example:<br>
+			<img src="m2.png"></li>
+	</ul>
+	<h1>Set</h1>
+	<ul>
+		<li> A Set is a special type collection – “set of values” (without keys), where each value may occur only once.repetive elements are nt allowed.</li>
+		<li>main methods are:
+			  new Set(iterable) – creates the set, and if an iterable object is provided (usually an array),copies values from it into the set.<br>
+			  set.add(value) – adds a value, returns the set itself.<br>
+			  set.delete(value) – removes the value, returns true if value existed at the moment of the call, otherwise false.<br>
+			  set.has(value) – returns true if the value exists in the set, otherwise false.<br>
+			  set.clear() – removes everything from the set.<br>
+			  set.size – is the elements count<br>
+			  set.keys() – returns an iterable object for values <br>
+			  set.values() – same as set.keys(), for compatibility with Map<br>
+			  set.entries() – returns an iterable object for entries [value, value], exists for compatibility with Map.<br></li>
+			  For example:<br>
+			<img src="ss2.png" style="width: 400px;height:250">
+
+    </ul>
+    <h1>WeakMap</h2>
+    <ul>
+		<li>The first difference from Map is that WeakMap keys must be objects, not primitive values</li>
+		<li>WeakMap does not support iteration and methods keys(), values(), entries(),<br> so there’s no way to get all keys or values from it.<br>
+        WeakMap has only the following methods:<br>
+          weakMap.get(key)<br>
+          weakMap.set(key, value)<br>
+          weakMap.delete(key)<br>
+          weakMap.has(key)<br>
+			For example:<br>
+			<img src="wm1.png" style="width: 400px;height:200"></li>
+		    <br>
+    </ul>
+    <h1>WeakSet</h2>
+    <ul>
+		<li>WeakSet behaves similarly:<br>
+            It is analogous to Set, but we may only add objects to WeakSet (not primitives).<br>
+           An object exists in the set while it is reachable from somewhere else.<br>
+           Like Set, it supports add, has and delete, but not size, keys() and no iterations<br>
+           For example:<br>
+		    <img src="ws2.png" style="width: 400px;height:200"></li>
+    </ul>
+    
+
+</body>
+</html>

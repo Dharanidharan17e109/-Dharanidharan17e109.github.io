@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>W4Schools Online Web Tutorials</title>
+	<link rel="icon" type="image/ico" href="238.jpg">
+	<style type="text/css">
+		ul{
+			font-family:Times New Roman;
+			font-size:20px;
+		}
+		h1{
+			font-family: Times New Roman;
+			color:green;
+		}
+		p{
+			font-family: Times New Roman;
+			font-size: 20px;
+		}
+		h2{
+			color:#003399;
+		}
+		div{
+			background-color: green;
+			color: white;
+			border-radius: 5px;
+			border-style: dashed;
+			border-color:brown;
+		}
+	</style>
+</head>
+<body>
+	<h1>Arrays</h1>
+	<p>An array is an ordered collection of values. Each value is called an element, and each element has a numeric position in the array, known as its index. JavaScript arrays are untyped: an array element may be of any type, and different elements of the same array may be of different types. Array elements may even be objects or other arrays, which allows you to create complex data structures, such as arrays of objects and arrays of arrays.</p>
+	<h2>Creating Arrays</h2>
+	<ul>
+		<li>The easiest way to create an array is with an array literal, which is simply a commaseparated list of array elements within square brackets. For example:<br><img src="arr1.png"></li>
+		<li>The values in an array literal need not be constants; they may be arbitrary expressions:<br><img src="arr2.png"></li>
+		<li>Array literals can contain object literals or other array literals: <br><img src="arr3.png"></li>
+	</ul>
+	<h2>Reading and Writing Array Elements</h2>
+	<ul>
+		<li>You access an element of an array using the [] operator. A reference to the array should appear to the left of the brackets.</li>
+		<li> An arbitrary expression that has a non-negative integer value should be inside the brackets. You can use this syntax to both read and write the value of an element of an array. Thus, the following are all legal JavaScript statements:<br><img src="arr4.png"></li>
+		<li> There is nothing special about the conversion of the index from a number to a string: you can do that with regular objects, too:<br><img src="arr5.png"></li>
+	</ul>
+	<h2>Sparse Arrays</h2>
+		<ul>
+			<li>A sparse array is one in which the elements do not have contiguous indexes starting at 0.</li>
+			<li>Sparse arrays can be created with the Array() constructor or simply by assigning to an array index larger than the current array length.<br><img src="arr6.png"></li>
+			<li>The omitted element exists in the array and has the value undefined. This is subtly different than array elements that do not exist at all. You can detect the difference between these two cases with the in operator:<br><img src="arr7.png"></li>
+		</ul>
+		<h2>Adding and Deleting Array Elements</h2>
+	<ul>
+		<li>We’ve already seen the simplest way to add elements to an array: just assign values to new indexes:<br><img src="arr8.png"></li>
+		<li>You can also use the push() method to add one or more values to the end of an array:<br><img src="arr9.png"></li>
+		<li>You can delete array elements with the delete operator, just as you can delete object properties:<br><img src="arr10.png"></li>
+	</ul>
+	<h2>Iterating Arrays</h2>
+	<ul>
+		<li>The most common way to loop through the elements of an array is with a for loop:<br><img src="arr11.png"></li>
+		<li>ECMAScript 5 defines a number of new methods for iterating array elements by passing each one, in index order, to a function  at you define. The forEach() method is the most general of these methods:<br><img src="arr13.png"></li>
+	</ul>
+	<h2>Multidimensional Arrays</h2>
+	<ul>
+		<li>JavaScript does not support true multidimensional arrays, but you can approximate them with arrays of arrays.</li>
+		<li>For example, suppose the variable matrix is an array of arrays of numbers.Every element in matrix[x] is an array of numbers. To access a particular number within this array, you would write matrix[x][y]. Here is a concrete example that uses a two-dimensional array as a multiplication table:<br><img src="arr14.png"></li>
+	</ul>
+	<h2>Array Methods</h2>
+	<ul>
+		<li>ECMAScript 3 defines a number of useful array manipulation functions on Array.prototype, which means that they are available as methods of any array. These ECMAScript 3 methods are introduced in the subsections below.</li>
+		<br>
+		<li><b>JOIN()</b>The Array.join() method converts all the elements of an array to strings and concatenates them, returning the resulting string.<br><img src="arr15.png"></li>
+		<br>
+		<li><b>REVERSE()</b>The Array.reverse() method reverses the order of the elements of an array and returns the reversed array.
+			<br><img src="arr16.png"></li>
+		 <li><b>SORT()</b>Array.sort() sorts the elements of an array in place and returns the sorted array. When sort() is called with no arguments, it sorts the array elements in alphabetical order (temporarily converting them to strings to perform the comparison, if necessary):<br><img src="arr17.png"></li>
+	</ul>
+</body>
+</html>

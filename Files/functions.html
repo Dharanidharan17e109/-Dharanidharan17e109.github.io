@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>W4Schools Online Web Tutorials</title>
+	<link rel="icon" type="image/ico" href="238.jpg">
+	<style type="text/css">
+		ul{
+			font-family:Times New Roman;
+			font-size:20px;
+		}
+		h1{
+			font-family: Times New Roman;
+			color:green;
+		}
+		p{
+			font-family: Times New Roman;
+			font-size: 20px;
+		}
+		h2{
+			color:#003399;
+		}
+		div{
+			background-color: green;
+			color: white;
+			border-radius: 5px;
+			border-style: dashed;
+			border-color:brown;
+		}
+	</style>
+</head>
+<body>
+	<h1>Functions</h1>
+	<p>A function is a block of JavaScript code that is defined once but may be executed, or invoked, any number of times. You may already be familiar with the concept of a function under a name such as subroutine or procedure. JavaScript functions are parameterized: a function definition may include a list of identifiers, known as parameters, that work as local variables for the body of the function. Function invocations provide values, or arguments, for the function’s parameters.</p>
+	<h2>Defining Functions</h2>
+	<ul>
+		<li>Functions are defined with the function keyword, which can be used in a function definition expression</li>
+		<li>Example 8-1 shows some function definitions using both statement and expression forms. Notice that a function defined as an expression is only useful if it is part of a larger expression, such as an assignment or invocation, that does something with the newly defined function.<br><img src="func1.png"></li>
+	</ul>
+	<h2>Nested Functions</h2>
+		<li>In JavaScript, functions may be nested within other functions. For example:<br><img src="func2.png"></li>
+		<li>The interesting thing about nested functions is their variable scoping rules: they can access the parameters and variables of the function (or functions) they are nested within. In the code above, for example, the inner function square() can read and write the parameters a and b defined by the outer function hypotenuse()</li>
+	</ul>
+	<h2>Invoking Functions</h2>
+	<ul>
+		<li>The JavaScript code that makes up the body of a function is not executed when the function is defined but when it is invoked. JavaScript functions can be invoked in four ways:
+				• as functions,
+				• as methods,
+		</li>
+		<li>1. Some JavaScript implementations relax this rule. Firefox, for example, allows “conditional function declarations” that appear within if statements.<br>• as constructors, and
+								 • indirectly through their call() and apply() methods.</li>
+		</ul>
+		<h2>Function Invocation</h2>
+		<ul>
+		<li>Functions are invoked as functions or as methods with an invocation expression</li>
+		<li>An invocation expression consists of a function expression that evaluates to a function object followed by an open parenthesis, a comma-separated list of zero or more argument expressions, and a close parenthesis.</li>
+		<li>The following code includes a number of regular function invocation expressions:<br><img src="func3.png"></li>
+		<li>Functions written to be invoked as functions do not typically use the this keyword at all. It can be used, however, to determine whether strict mode is in effect:<br><img src="func4.png"></li>
+	</ul>
+	<h2>Method Invocation</h2>
+		<ul>
+			<li>A method is nothing more than a JavaScript function that is stored in a property of an object. If you have a function f and an object o, you can define a method named m of o with the following line:<br>o.m = f;<br>Having defined the method m() of the object o, invoke it like this:<br>
+o.m();<br></li>
+			<li>In a method invocation expression like this, the object o becomes the invocation context, and the function body can refer to that object by using the keyword this. Here is a concrete example:<br><img src="func5.png"></li>
+		</ul>
+</body>
+</html>
